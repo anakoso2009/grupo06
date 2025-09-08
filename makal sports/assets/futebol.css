@@ -1,0 +1,34 @@
+*{
+    margin: 0%;
+    background-color: #E5E5E5;
+}
+
+h2 {
+    font-size: 50px;
+    text-align: center;
+    color: #00199E;
+}
+
+p {
+    font-size: 25px;
+}
+
+.futebol {
+    background-image: url(../img/sla.jpg);
+    text-align: center;
+    font-size: 40px;
+    height: 500px;
+    width: 1530px;
+    color: #00199E;
+}
+
+.textos {
+    
+}
+.espaco {
+    margin: 10px;
+}
+
+.rodape {
+    text-align: center;
+}
