@@ -1,0 +1,108 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Marcellus", serif;
+  background-color: #ffd4a0;
+  color: #333;
+  line-height: 1.6;
+  
+  max-width: 900px;
+  margin: auto;
+}
+
+
+header {
+padding: 30px;
+  border-bottom: 7px solid #ff7a51;
+  padding-bottom: 20px;
+  margin-bottom: 40px;
+  background-color: aliceblue;
+}
+
+.perfil {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.dados {
+  flex: 1;
+}
+
+#nome {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #ff5a51;
+  margin-bottom: 5px;
+}
+
+.subtitulo {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.foto img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 10px solid #ff7e1b;
+  margin-top: 10px;
+}
+
+#contato {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+#contato p {
+  display: flex;
+  align-items: center;
+  font-size: 0.95rem;
+  color: #444;
+  gap: 8px;
+}
+
+
+main section {
+  margin-bottom: 30px;
+}
+
+
+
+h2 {
+  font-size: 40px;
+  color: #ff8629;
+  margin-bottom: 10px;
+  
+  padding-left: 10px;
+}
+
+p, ul {
+  font-size: 1rem;
+  color: #333;
+}
+
+ul {
+  list-style: none;
+  padding-left: 15px;
+}
+
+
+
+  .foto img {
+    margin-top: 15px;
+  }
+

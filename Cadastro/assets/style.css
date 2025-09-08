@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+  
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #fe6890;
+    font-family: "VT323", monospace;
+    overflow: hidden;
+    background-image: url(https://i.pinimg.com/736x/15/23/b7/1523b75e263263fba632aded055b2e6c.jpg);
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.second{
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    width: 300px;
+    
+    p{
+        text-align: left;
+        margin-left: 5px;
+    }
+
+    h2{
+        color: rgb(255, 137, 47);
+        margin-bottom: 15px;
+        text-align: center;
+        cursor: default;
+        font-size: 80px;
+    }
+
+    input, select{
+        text-align: center;
+        width: 90%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    .button{
+        background-color: rgb(212, 155, 23);
+        color: #fff;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .button:hover{
+        background-color: rgb(112, 172, 34);
+    }
+
+    input:focus, select:focus {
+        border-color: rgb(204, 93, 255);
+        box-shadow: 0 0 5px rgba(93, 255, 201, 0.5);
+    }
+
+    .phone{
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+
+    }
+
+    .tele input[type="checkbox"]{
+        margin-left: 10px;
+    }
+
+    .tele .caixa-texto {
+       margin-right: 1cm;
+    }
+
+    .tele input[type="checkbox"]:checked ~ .caixa-texto {
+        display: block;
+    }
+}

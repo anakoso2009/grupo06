@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Delicious Handrawn", cursive;
+}
+
+body {
+  background-color: #bbd25e; /* tom mais suave */
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Título principal */
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  background-color: #feecca;
+  color: hsl(41, 100%, 60%);
+  padding: 1rem;
+  letter-spacing: 2px;
+  border-radius: 5px;
+  
+}
+
+/* Texto secundário */
+#text1 {
+  text-align: center;
+  padding: 1rem 0;         
+  background-color: #456906;
+  color: #fff;
+  font-size: 1.4rem;
+  
+}
+
+/* Menu */
+#menu {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: #fcffa9;
+  flex-wrap: wrap;
+}
+
+.menu-item {
+  flex: 1;
+  max-width: 200px;
+  border: 2px solid #6a9f00;
+  border-radius: 10px;
+  box-shadow: 2px 4px 10px rgba(0,0,0,0.2);
+}
+
+#menu a {
+  display: block;
+  color: #548309;
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 0.8rem;
+text-align: center;
+
+}
+
+
+.menu-item:hover {
+  background-color: #fcf236;
+  transform: translateY(-10px);
+  box-shadow: 4px 6px 15px rgba(0,0,0,0.3);
+}
+
+.titulo {
+  background-image: url(https://i.pinimg.com/736x/26/b5/f0/26b5f0277986c49df966fc6cf29f1ec8.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  padding: 4rem 2rem;
+  text-align: center;
+  color: #fff;
+  font-size: 2rem;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+}
+
+
+#pingu {
+  background-image: url(https://i.pinimg.com/736x/ac/33/fa/ac33facfdc701b62059f460ffdc07166.jpg);
+  height: 7cm;
+  width: 7cm;
+  background-size: cover;
+  background-position: center;
+  margin: 2rem auto;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(255, 251, 4, 0.3);
+}
+
+#bk2 {
+  background-color: #fdc52c;
+  padding: 2rem;
+  text-align: center;
+}
+
+#pinguP {
+  height: 300px;
+  width: 200px;
+  background-image: url(https://i.pinimg.com/736x/c6/78/eb/c678eb38aac4e286a1c622bbde2ed297.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 2rem auto;
+  border: 4px solid #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+}
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+  max-width: 1200px;
+}
+
+.img-box {
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  transition: 0.3s ease;
+}
+
+.img-box img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.img-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.3);
+}
+
+
+.detalhes {
+  text-align: center;
+  padding: 2rem;
+  background-color: #fdc52c;
+  border-radius: 20px;
+  margin: 2rem auto;
+  max-width: 900px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.detalhes h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #3c5507;
+}
+
+.detalhes p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+
+.btn-comprar {
+  background: linear-gradient(90deg, #fe6e00, #ff914d);
+  color: #fff;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.btn-comprar:hover {
+  background: linear-gradient(90deg, #ff914d, #fe6e00);
+  transform: scale(1.05);
+}
+
+#fundoprodutos {
+    background-image: url(https://i.pinimg.com/736x/fb/c1/03/fbc1035ec8d56ddd8a5fe79669531848.jpg);
+}
+
+#descricao {
+    background-color: beige;
+    text-align: center;
+}
+
+#aboutus {
+  color: #130000;
+  background-color: #7d0237;
+  text-shadow:rgb(255, 255, 255);
+font-size: x-large;
+    background-position-y: bottom;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 10px;
+  }
+
+  #contato {
+    color: #7d0237;
+    text-align: center;
+    padding: 2rem;
+
+  }
+
+   #textoaboutus {
+    color: #7d0237;
+    
+    text-align: center;
+    padding: 2rem;
+    font-size: 23px;
+    background-color: #ff6582;
+
+   }
