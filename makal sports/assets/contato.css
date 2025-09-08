@@ -148,3 +148,10 @@ input[type="submit"]:hover {
 input[type="reset"]:hover {
   background-color: #00199E; 
 }
+
+footer {
+    text-align: center;
+    justify-content: center;
+    background-color: #07ADC3;
+    color: #fbfcff;
+}
