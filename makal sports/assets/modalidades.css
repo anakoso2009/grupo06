@@ -169,7 +169,7 @@ header {
   color: #ffb4c3; 
 }
 .atletismo {
-  background-image: url(/img/atletismo2.jpg);
+  background-image: url(../img/atletismo2.jpg);
   opacity: 0.8;
   display: flex;
   justify-content: flex-start; 
