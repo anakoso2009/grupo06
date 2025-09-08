@@ -52,7 +52,7 @@ header {
 
 
 .futebol {
-    background-image: url(../img/sla.jpg);
+    background-image: url(../img/atletismo.jpg);
     text-align: center;
     font-size: 40px;
     height: 500px;
@@ -77,7 +77,7 @@ header {
 }
 
 
-footer {
+.rodape {
     text-align: center;
     background-color: #07ADC3;
     color: #fbfcff;
