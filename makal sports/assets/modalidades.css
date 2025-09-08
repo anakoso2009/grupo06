@@ -19,9 +19,11 @@ margin: 0%;
     background-image: url(../img/fut.jpg);
     display: flex;
     margin-top: 10px;
-    width: 900px;
-    height: 370px;
+    width: 1530px;
+    height: 390px;
+    background-size: cover;
 }
+
 
 
 .rodape {
