@@ -95,7 +95,7 @@ header {
 }
 
 .futebol-link:hover .futebol-title {
-  transform: translateY(-5px) scale(1.05);
+  transform: translateY(-5px) scale(1.15);
   color: #cfffbf;
 }
 
@@ -130,24 +130,77 @@ header {
 }
 
 .volei-link:hover .volei-title {
-  transform: translateY(-5px) scale(1.05);
+  transform: translateY(-5px) scale(1.15);
   color: #ffffff; 
 }
 
 .ballet {
-    background-image: url(../img/fut.jpg);
-    display: flex;
-    width: 1530px;
-    height: 390px;
-    background-size: cover;
+  background-image: url(../img/ballet.png);
+  opacity: 0.8;
+  display: flex;
+  justify-content: flex-end; 
+  align-items: center;
+  width: 1530px;
+  height: 390px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
 }
 
-.Atletismo {
-    background-image: url(../img/fut.jpg);
-    display: flex;
-    width: 1530px;
-    height: 390px;
-    background-size: cover;
+.ballet-link {
+  text-decoration: none;
+}
+
+.ballet-title {
+  display: block;
+  font-size: 120px;       
+  font-weight: bold;
+  color: rgb(255, 62, 133);
+  text-shadow: 3px 3px 6px rgb(105, 0, 83); 
+  margin-right: 40px;     
+  padding-right: 3cm;
+  letter-spacing: 3px;
+  transition: 0.3s;
+
+}
+
+.ballet-link:hover .ballet-title {
+  transform: translateY(-5px) scale(1.15);
+  color: #ffb4c3; 
+}
+.atletismo {
+  background-image: url(/img/atletismo2.jpg);
+  opacity: 0.8;
+  display: flex;
+  justify-content: flex-start; 
+  align-items: center;
+  width: 1530px;
+  height: 450px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.atletismo-link {
+  text-decoration: none;
+}
+
+.atletismo-title {
+  display: block;
+  font-size: 120px;       
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  text-shadow: 3px 3px 6px rgb(68, 31, 0); 
+  margin-right: 40px;     
+  padding-left: 2cm;
+  letter-spacing: 3px;
+  transition: 0.3s;
+
+}
+
+.atletismo-link:hover .atletismo-title {
+  transform: translateY(-5px) scale(1.15);
+  color: #ffb70f; 
 }
 
 .Titulo {
