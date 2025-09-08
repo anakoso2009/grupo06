@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
 *{
 padding: 0%;
 margin: 0%;
-
+  font-family: "DM Sans", sans-serif;
 }
 
 header {
@@ -10,7 +12,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #5267E2;
+  background-color: #ffffff;
 
   nav {
     width: 100%;
@@ -31,7 +33,7 @@ header {
       padding: 10px 18px;
       border-radius: 12px;
       color: #07ADC3;
-      background-color: #E5E5E5;
+      background-color: #ffffff;
       text-decoration: none;
       font-weight: 500;
       font-family: "Poppins", sans-serif;
@@ -41,6 +43,8 @@ header {
       &:hover {
         transform: translateY(-5px) scale(1.05);
         box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+        background-color: #07ADC3;
+        color: #ffffff
       }
     }
   }
@@ -60,19 +64,42 @@ header {
 }
 
 .fut {
-    background-image: url(../img/futebol.png);
+    background-image: url(../im    );
     display: flex;
     margin-top: 10px;
-    width: 1700px;
-    height: 400px;
-}
-
-.volei {
-    background-image: url(../img/fut.jpg);
-    display: flex;
     width: 1530px;
     height: 390px;
     background-size: cover;
+}
+
+.volei {
+  background-image: url(../img/VOLEI.png);
+  display: flex;
+  justify-content: flex-end; /* joga o título pro lado direito */
+  align-items: center;
+  width: 1530px;
+  height: 390px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.volei-link {
+  text-decoration: none;
+}
+
+.volei-title {
+  font-size: 80px;       
+  font-weight: bold;
+  color: white;
+  text-shadow: 3px 3px 6px rgba(0,0,0,0.7); 
+  margin-right: 40px;     
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.volei-link:hover .volei-title {
+  transform: translateY(-5px) scale(1.05);
+  color: #ffeb3b; 
 }
 
 .ballet {
@@ -93,7 +120,6 @@ header {
 
 .Titulo {
     text-align: center;
-    background-color: blueviolet;
     font-size: 35px;
 }
 
