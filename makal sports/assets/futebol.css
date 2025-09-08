@@ -79,6 +79,7 @@ header {
 
 footer {
     text-align: center;
+    justify-content: center;
     background-color: #07ADC3;
     color: #fbfcff;
 }
