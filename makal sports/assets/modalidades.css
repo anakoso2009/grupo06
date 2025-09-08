@@ -75,7 +75,7 @@ header {
 .volei {
   background-image: url(../img/VOLEI.png);
   display: flex;
-  justify-content: flex-end; /* joga o título pro lado direito */
+  justify-content: flex-end; 
   align-items: center;
   width: 1530px;
   height: 390px;
