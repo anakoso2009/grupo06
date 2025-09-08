@@ -1,17 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
 *{
-    margin: 0%;
-    background-color: #E5E5E5;
+padding: 0%;
+margin: 0%;
+font-family: "DM Sans", sans-serif;
 }
 
-h2 {
-    font-size: 50px;
-    text-align: center;
-    color: #00199E;
-}
+header {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
 
-p {
-    font-size: 25px;
-}
+  nav {
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+
+    ul {
+      list-style: none;
+      display: flex;
+      gap: 25px; 
+      
+    }
+
+    }
+
+    a {
+      padding: 10px 18px;
+      border-radius: 12px;
+      color: #07ADC3;
+      background-color: #ffffff;
+      text-decoration: none;
+      font-weight: 500;
+      font-family: "Poppins", sans-serif;
+      font-size: 15px;
+      transition: all 0.3s ease;
+
+      &:hover {
+        transform: translateY(-5px) scale(1.05);
+        box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+        background-color: #07ADC3;
+        color: #ffffff
+      }
+    }
+  }
+
+
 
 .futebol {
     background-image: url(../img/sla.jpg);
@@ -19,16 +57,34 @@ p {
     font-size: 40px;
     height: 500px;
     width: 1530px;
-    color: #00199E;
+    color: #fbfcff;
+    padding: 40px;
 }
 
 .textos {
-    
+    margin: 15px;
+
+    h2 {
+    font-size: 50px;
+    color: #07ADC3;
 }
-.espaco {
-    margin: 10px;
+
+    p {
+    font-size: 25px;
 }
+    padding: 20px;
+
+}
+
 
 .rodape {
     text-align: center;
+    background-color: #07ADC3;
+    color: #fbfcff;
+}
+
+.title {
+    color: #00199E;
+    text-align: center;
+    font-size: 40px;
 }
