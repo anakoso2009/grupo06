@@ -64,16 +64,42 @@ header {
 }
 
 .fut {
-    background-image: url(../img/futebol.png);
-    display: flex;
-    margin-top: 10px;
-    width: 1530px;
-    height: 390px;
-    background-size: cover;
+  background-image: url(../img/futebol.png);
+  opacity: 0.8;
+  display: flex;
+  justify-content: flex-start; 
+  align-items: center;       
+  margin-top: 10px;
+  width: 1530px;
+  height: 390px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.futebol-link {
+  text-decoration: none;
+}
+
+.futebol-title {
+  font-size: 150px;
+  font-weight: bold;
+  color: rgb(255, 255, 255); 
+  text-shadow: 3px 3px 6px rgb(0, 15, 0);
+  margin-right: 40px;
+  padding-left: 3cm;
+  letter-spacing: 3px;
+  transition: 0.3s;
+}
+
+.futebol-link:hover .futebol-title {
+  transform: translateY(-5px) scale(1.05);
+  color: #cfffbf;
 }
 
 .volei {
   background-image: url(../img/VOLEI.png);
+  opacity: 0.8;
   display: flex;
   justify-content: flex-end; 
   align-items: center;
@@ -89,17 +115,20 @@ header {
 }
 
 .volei-title {
-  font-size: 80px;       
+  font-size: 150px;       
   font-weight: bold;
-  color: white;
-  text-shadow: 3px 3px 6px rgba(0,0,0,0.7); 
+  color: rgb(255, 197, 49);
+  text-shadow: 3px 3px 6px rgb(1, 77, 184); 
   margin-right: 40px;     
-  transition: transform 0.3s ease, color 0.3s ease;
+  padding-right: 3cm;
+  letter-spacing: 3px;
+  transition: 0.3s;
+
 }
 
 .volei-link:hover .volei-title {
   transform: translateY(-5px) scale(1.05);
-  color: #ffeb3b; 
+  color: #ffffff; 
 }
 
 .ballet {
@@ -120,7 +149,9 @@ header {
 
 .Titulo {
     text-align: center;
-    font-size: 35px;
+    font-size: 45px;
+    letter-spacing: 5px;
+    
 }
 
 .basquete {
