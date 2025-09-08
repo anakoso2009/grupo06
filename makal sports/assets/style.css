@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+body {
+
+  font-family: 'DM Sans', sans-serif;
+    background: linear-gradient( #07ADC3, #E5E5E5);
+}
+
+
+.banner {
+  width: 100%;
+  background: url('../img/banner.jpg');
+    background-size: cover;
+  padding: 30px;
+  display: flex;
+}
+.header-content {
+  
+  align-items: center;
+  gap: 200px; /* espaço entre logo e texto */
+}
+.logo {
+float: left;
+width: 200px;
+height: 200px;
+border-radius: 50%;
+margin-left: 20px;
+ margin-top: 30px;
+}
+.marca-texto h2 {
+font-family: "DM Sans", sans-serif;
+  color: #fff;
+  font-size: 1.7rem;
+float: right;
+  width: 55%; /* ocupa o resto da largura da foto inha*/
+  text-align: center;
+margin-top: 90px;}
+.marca-texto p {
+  color: #eee;
+  font-size: 1.1rem;
+  text-align: right;
+}
+
+footer {
+    font-family: 'dm sans', sans-serif;
+    text-align: center;
+    background-color: #07ADC3;
+    color: #fbfcff;
+}
+
+/* Estilo base do card */
+.cards-lista {
+  display: flex; 
+  font-family: "DM Sans", sans-serif;
+  justify-content: center;             
+  gap: 20px;                   /* espaço entre cards */
+  margin-top: 20px;
+  margin-bottom: 44px;
+
+
+}
+
+/* Estilo base do card */
+.card {
+  width: 280px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.85);
+  padding-bottom: 60px; /* Espaço para o título que fica fora da imagem */
+  text-align: center;
+    box-shadow: #07ADC3;  
+    margin-bottom: 44px; 
+}
+
+/* Imagem ocupa todo o conteúdo do card (exceto espaço do título) */
+.card img {
+  width: 100%;
+  border-radius: 16px 16px 0 0;
+  object-fit: cover;
+  height: 150px;
+}
+
+/* Título logo abaixo da imagem - visível sempre */
+.card-info h2 {
+  margin: 12px 10px 6px;
+  font-size: 1rem;
+  font-weight: 530;
+  color: #5267E2;
+}
+
+/* Subtítulo e notícia*/
+.card-info .card-desc,
+.card-info .card-news {
+  opacity: 0;
+  max-height: 0;
+  margin: 0 10px;
+  color: #555;
+  font-size: 0.95rem;
+  text-align: left;
+
+}
+
+
+.card:hover {
+  background: #E5E5E5;
+}
+
+.card:hover .card-info .card-desc,
+.card:hover .card-info .card-news {
+  opacity: 1;
+  max-height: 80px;
+  margin-top: 6px;
+}
