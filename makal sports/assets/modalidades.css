@@ -82,7 +82,8 @@ header {
 }
 
 .futebol-title {
-  font-size: 150px;
+  display: block;
+  font-size: 120px;
   font-weight: bold;
   color: rgb(255, 255, 255); 
   text-shadow: 3px 3px 6px rgb(0, 15, 0);
@@ -90,6 +91,7 @@ header {
   padding-left: 3cm;
   letter-spacing: 3px;
   transition: 0.3s;
+  
 }
 
 .futebol-link:hover .futebol-title {
@@ -115,7 +117,8 @@ header {
 }
 
 .volei-title {
-  font-size: 150px;       
+  display: block;
+  font-size: 120px;       
   font-weight: bold;
   color: rgb(255, 197, 49);
   text-shadow: 3px 3px 6px rgb(1, 77, 184); 
@@ -151,15 +154,44 @@ header {
     text-align: center;
     font-size: 45px;
     letter-spacing: 5px;
+    padding: 0.5cm;
     
 }
 
+
 .basquete {
-    background-image: url(../img/fut.jpg);
-    display: flex;
-    width: 1530px;
-    height: 390px;
-    background-size: cover;
+  background-image: url(../img/basquete2.png);
+  opacity: 0.8;
+  display: flex;
+  justify-content: flex-start; 
+  align-items: center;
+  width: 1530px;
+  height: 450px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.basquete-link {
+  text-decoration: none;
+}
+
+.basquete-title {
+  display: block;
+  font-size: 120px;       
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  text-shadow: 3px 3px 6px rgb(255, 116, 3); 
+  margin-right: 40px;     
+  padding-left: 2cm;
+  letter-spacing: 3px;
+  transition: 0.3s;
+
+}
+
+.basquete-link:hover .basquete-title {
+  transform: translateY(-5px) scale(1.05);
+  color: #ffc86f; 
 }
 
 
