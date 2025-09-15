@@ -127,3 +127,12 @@ nav a:hover {
   max-height: 80px;
   margin-top: 6px;
 }
+
+footer {
+  margin-top:20px ;
+    text-align: center;
+    justify-content: center;
+    background-color: #07ADC3;
+    color: #fbfcff;
+    width: 100%;
+}
