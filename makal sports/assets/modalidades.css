@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
 
-*{
-padding: 0%;
-margin: 0%;
+* {
+  padding: 0;
+  margin: 0;
   font-family: "DM Sans", sans-serif;
+  box-sizing: border-box;
 }
 
 header {
@@ -13,244 +14,240 @@ header {
   justify-content: center;
   align-items: center;
   background-color: #ffffff;
-
-  nav {
-    width: 100%;
-    display: flex;
-    justify-content: center; 
-    align-items: center;
-
-    ul {
-      list-style: none;
-      display: flex;
-      gap: 25px; 
-      
-    }
-
-    }
-
-    a {
-      padding: 10px 18px;
-      border-radius: 12px;
-      color: #07ADC3;
-      background-color: #ffffff;
-      text-decoration: none;
-      font-weight: 500;
-      font-family: "Poppins", sans-serif;
-      font-size: 15px;
-      transition: all 0.3s ease;
-
-      &:hover {
-        transform: translateY(-5px) scale(1.05);
-        box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
-        background-color: #07ADC3;
-        color: #ffffff
-      }
-    }
-  }
-
-.navegacao {
-    justify-content: center;
-    text-align: center;
-    display: flex;
 }
 
-.menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-
+header nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.fut {
-  background-image: url(../img/futebol.png);
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+header nav ul li a {
+  padding: 10px 18px;
+  border-radius: 12px;
+  color: #07ADC3;
+  background-color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+
+header nav ul li a:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+  background-color: #07ADC3;
+  color: #ffffff;
+}
+
+.Titulo {
+  text-align: center;
+  font-size: 45px;
+  letter-spacing: 5px;
+  padding: 0.5cm;
+}
+
+.fut,
+.volei,
+.basquete,
+.ballet,
+.atletismo {
   opacity: 0.8;
   display: flex;
-  justify-content: flex-start; 
-  align-items: center;       
-  margin-top: 10px;
-  width: 1530px;
+  align-items: center;
+  width: 100%;
   height: 390px;
   background-size: cover;
   background-position: center;
   position: relative;
 }
 
-.futebol-link {
+.fut {
+  background-image: url(../img/futebol.png);
+  justify-content: flex-start;
+}
+
+.volei {
+  background-image: url(../img/VOLEI.png);
+  justify-content: flex-end;
+}
+
+.basquete {
+  background-image: url(../img/basquete2.png);
+  justify-content: flex-start;
+  height: 450px;
+}
+
+.ballet {
+  background-image: url(../img/ballet.png);
+  justify-content: flex-end;
+}
+
+.atletismo {
+  background-image: url(../img/atletismo2.jpg);
+  justify-content: flex-start;
+  height: 450px;
+}
+
+.futebol-link,
+.volei-link,
+.basquete-link,
+.ballet-link,
+.atletismo-link {
   text-decoration: none;
 }
 
-.futebol-title {
+.futebol-title,
+.volei-title,
+.basquete-title,
+.ballet-title,
+.atletismo-title {
   display: block;
   font-size: 120px;
   font-weight: bold;
-  color: rgb(255, 255, 255); 
-  text-shadow: 3px 3px 6px rgb(0, 15, 0);
-  margin-right: 40px;
-  padding-left: 3cm;
   letter-spacing: 3px;
   transition: 0.3s;
-  
 }
+
+.futebol-title {
+  color: #fff;
+  text-shadow: 3px 3px 6px rgb(0, 15, 0);
+  padding-left: 3cm;
+}
+
+.volei-title {
+  color: rgb(255, 197, 49);
+  text-shadow: 3px 3px 6px rgb(1, 77, 184);
+  padding-right: 3cm;
+}
+
+.basquete-title {
+  color: #fff;
+  text-shadow: 3px 3px 6px rgb(255, 116, 3);
+  padding-left: 2cm;
+}
+
+.ballet-title {
+  color: rgb(255, 62, 133);
+  text-shadow: 3px 3px 6px rgb(105, 0, 83);
+  padding-right: 3cm;
+}
+
+.atletismo-title {
+  color: #fff;
+  text-shadow: 3px 3px 6px rgb(68, 31, 0);
+  padding-left: 2cm;
+}
+
 
 .futebol-link:hover .futebol-title {
   transform: translateY(-5px) scale(1.15);
   color: #cfffbf;
 }
 
-.volei {
-  background-image: url(../img/VOLEI.png);
-  opacity: 0.8;
-  display: flex;
-  justify-content: flex-end; 
-  align-items: center;
-  width: 1530px;
-  height: 390px;
-  background-size: cover;
-  background-position: center;
-  position: relative;
-}
-
-.volei-link {
-  text-decoration: none;
-}
-
-.volei-title {
-  display: block;
-  font-size: 120px;       
-  font-weight: bold;
-  color: rgb(255, 197, 49);
-  text-shadow: 3px 3px 6px rgb(1, 77, 184); 
-  margin-right: 40px;     
-  padding-right: 3cm;
-  letter-spacing: 3px;
-  transition: 0.3s;
-
-}
-
 .volei-link:hover .volei-title {
   transform: translateY(-5px) scale(1.15);
-  color: #ffffff; 
-}
-
-.ballet {
-  background-image: url(../img/ballet.png);
-  opacity: 0.8;
-  display: flex;
-  justify-content: flex-end; 
-  align-items: center;
-  width: 1530px;
-  height: 390px;
-  background-size: cover;
-  background-position: center;
-  position: relative;
-}
-
-.ballet-link {
-  text-decoration: none;
-}
-
-.ballet-title {
-  display: block;
-  font-size: 120px;       
-  font-weight: bold;
-  color: rgb(255, 62, 133);
-  text-shadow: 3px 3px 6px rgb(105, 0, 83); 
-  margin-right: 40px;     
-  padding-right: 3cm;
-  letter-spacing: 3px;
-  transition: 0.3s;
-
-}
-
-.ballet-link:hover .ballet-title {
-  transform: translateY(-5px) scale(1.15);
-  color: #ffb4c3; 
-}
-.atletismo {
-  background-image: url(../img/atletismo2.jpg);
-  opacity: 0.8;
-  display: flex;
-  justify-content: flex-start; 
-  align-items: center;
-  width: 1530px;
-  height: 450px;
-  background-size: cover;
-  background-position: center;
-  position: relative;
-}
-
-.atletismo-link {
-  text-decoration: none;
-}
-
-.atletismo-title {
-  display: block;
-  font-size: 120px;       
-  font-weight: bold;
-  color: rgb(255, 255, 255);
-  text-shadow: 3px 3px 6px rgb(68, 31, 0); 
-  margin-right: 40px;     
-  padding-left: 2cm;
-  letter-spacing: 3px;
-  transition: 0.3s;
-
-}
-
-.atletismo-link:hover .atletismo-title {
-  transform: translateY(-5px) scale(1.15);
-  color: #ffb70f; 
-}
-
-.Titulo {
-    text-align: center;
-    font-size: 45px;
-    letter-spacing: 5px;
-    padding: 0.5cm;
-    
-}
-
-
-.basquete {
-  background-image: url(../img/basquete2.png);
-  opacity: 0.8;
-  display: flex;
-  justify-content: flex-start; 
-  align-items: center;
-  width: 1530px;
-  height: 450px;
-  background-size: cover;
-  background-position: center;
-  position: relative;
-}
-
-.basquete-link {
-  text-decoration: none;
-}
-
-.basquete-title {
-  display: block;
-  font-size: 120px;       
-  font-weight: bold;
-  color: rgb(255, 255, 255);
-  text-shadow: 3px 3px 6px rgb(255, 116, 3); 
-  margin-right: 40px;     
-  padding-left: 2cm;
-  letter-spacing: 3px;
-  transition: 0.3s;
-
+  color: #ffffff;
 }
 
 .basquete-link:hover .basquete-title {
   transform: translateY(-5px) scale(1.05);
-  color: #ffc86f; 
+  color: #ffc86f;
+}
+
+.ballet-link:hover .ballet-title {
+  transform: translateY(-5px) scale(1.15);
+  color: #ffb4c3;
+}
+
+.atletismo-link:hover .atletismo-title {
+  transform: translateY(-5px) scale(1.15);
+  color: #ffb70f;
 }
 
 
 footer {
-    text-align: center;
+  text-align: center;
+  background-color: #07ADC3;
+  color: #fbfcff;
+  padding: 15px;
+}
+
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+    /* empilha no celular */
+    align-items: center;
+  }
+
+  main div {
+    width: 90%;
+    /* ocupa quase toda tela */
+    max-width: none;
+  }
+
+  .Titulo h1 {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1023px) {
+  main {
+
+    background-color: rgb(255, 255, 255);
+  }
+
+  #left,
+  #right {
+    line-height: 70vh;
+    padding-top: 0;
+  }
+
+}
+
+@media screen and (max-width: 660px) {
+  main {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    padding: 10px;
+  }
+
+  main div {
+    width: 90%;
+    height: auto;
+    display: flex;
     justify-content: center;
-    background-color: #07ADC3;
-    color: #fbfcff;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .futebol-title,
+  .volei-title,
+  .basquete-title,
+  .ballet-title,
+  .atletismo-title {
+    font-size: 5vw;
+    padding: 0;
+    text-align: center;
+  }
+
+  .fut,
+  .volei,
+  .basquete,
+  .ballet,
+  .atletismo {
+    height: 6CM;
+    justify-content: center;
+    background-position: center;
+  }
 }
